@@ -19,9 +19,9 @@ Zarafa.plugins.safesenders.SafeSenders = Ext.extend(Zarafa.core.Plugin, {
 
 	/**
 	 * Insert safesenders widget into the mail category
-	 * @return {settingssafesenderswidget} 
+	 * @return {settingssafesenderswidget}
  	 */
-	safeSendersWidget: function() 
+	safeSendersWidget: function()
 	{
 		return [{
 			xtype : 'safesenders.settingssafesenderswidget'
@@ -31,8 +31,8 @@ Zarafa.plugins.safesenders.SafeSenders = Ext.extend(Zarafa.core.Plugin, {
 
 Zarafa.onReady(function() {
 	container.registerPlugin(new Zarafa.core.PluginMetaData({
-		name : 'safesenders',
-		displayName : _('Safesender settingswidget'),
+		name : 'safesenderssettings',
+		displayName : _('Safe Sender List'),
 		pluginConstructor : Zarafa.plugins.safesenders.SafeSenders,
 		about : Zarafa.plugins.safesenders.ABOUT
 	}));

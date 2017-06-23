@@ -33,7 +33,7 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 
 		Ext.applyIf(config, {
 			height : 400,
-			title : _('Safe senders'),
+			title : _('Safe Senders'),
 			xtype : 'safesenders.settingssafesenderswidget',
 			layout : 'column',
 			items : [{
@@ -41,14 +41,14 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 				name : 'zarafa/v1/contexts/mail/safe_senders_list',
 				ref : 'safesendersGrid',
 				columnWidth : 0.5,
-				height : 200,
+				height : 360,
 				style:'margin-right:10px',
 				store : store,
 				hideHeaders : true,
 				viewConfig : {
 					forceFit : true,
 					deferEmptyText: false,
-					emptyText: '<div class="emptytext">' + _('safe senders list is empty') + '</div>'
+					emptyText: '<div class="emptytext">' + _('Safe Senders List Is Empty') + '</div>'
 				},
 				columns: [{
 					dataIndex : 'name',
@@ -95,7 +95,7 @@ Zarafa.plugins.safesenders.SettingsSafesendersWidget = Ext.extend(Zarafa.setting
 		store.each(function(record){
 		    list.push(record.get('name'));
 		});
-		
+
 		return list
 	},
 
